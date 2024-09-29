@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from odditycommoddity.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:25:49 GMT -->
+<head>
+    <script src="../cdn.jsdelivr.net/npm/lazyload%402.0.0-rc.2/lazyload.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODDITYCOMMODDITY - HOME</title>
+    <link rel="icon" type="image/x-icon" href="3-Assets/Images/Web/Pixels/cd.gif">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="3-Assets/Style-sheets/music-player.css" rel="stylesheet" type="text/css" media="all">
+
+    <script src="../code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+<main>
+
+</main>
+
+<div class="container">
+    <div class="containerbody"
+         style="width: 1020px; height: 2150px; margin-left: 100px; margin-top: 13px; display: inline; position: absolute; z-index: -10; opacity: 80%"></div>
+
+
+    <div class="left-container">
+
+        <!--Chatbox-->
+        <div class="sidebar"
+             style='background-image: url("3-Assets/Images/Backgrounds/canvas33.png"); border-color:white;'>
+
+            <h1 style="text-align:left">Chat in silence</h1>
+            <iframe src="https://www5.cbox.ws/box/?boxid=953163&boxtag=6HODFg" width="100%" height="350"
+                    allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0"
+                    scrolling="auto"></iframe>
+        </div>
+
+        <!--Status Cafe-->
+        <div class="sidebar"
+             style="height: 85px; margin-top: 25px; background-image: url('3-Assets/Images/Backgrounds/canvas60.png'); border-color: white;">
+            <div style="position: relative;">
+                <img src="3-Assets/Images/UI/speech%20bubble.png"
+                     style="width: 220px; z-index: 0; position: absolute; margin-top: -40px; margin-left: -0px;">
+                <div style=" position: absolute;top: 60%;left: 50%;transform: translate(-40%, -30%);color: white;font-size: 12px;padding: 10px;">Free airdrop
+                    Click <a href="https://www.youtube.com/watch?v=Td_0Hq5sSSw" target="_top">HERE</a>
+                </div>
+            </div>
+
+
+            <div id="statuscafe" style="position: absolute; width: 200px; margin-top: -25px; margin-left: 20px;">
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+            </div>
+            <script src="../status.cafe/current-status8405.js?name=odditycommoddity" defer></script>
+            <img src="3-Assets/Images/Web/Pixels/lizard.png"
+                 style="width: 50px; z-index: 1; position: absolute; margin-left: -20px; margin-top: 60px">
+        </div>
+
+        <!--Hit Counter-->
+        <div class="sidebar"
+             style='background-image: url("3-Assets/Images/Backgrounds/canvas67.png"); border-color: white; text-align: center; font-size: 15px;'>
+            <p style="margin: 0px; margin-bottom: 5px;font-family: AppleKid;">You are victim number:</p>
+            <a href='https://www.free-website-hit-counter.com/'>
+                <img
+                        src='https://www.free-website-hit-counter.com/c.php?d=9&amp;id=134429&amp;s=2' border='0'
+                        alt='Free Website Hit Counter'></a><br><small><a
+                href='https://www.free-website-hit-counter.com/'
+                title="Free Website Hit Counter"
+                style="font-style: italic;"></a></small></div>
+
+        <!--Starship Titanic Poster-->
+        <img src="3-Assets/Images/Solids/pic9.jpg"
+             style="width: 226px; border-radius: 5px; margin-top: 10px; border: hidden; border-width: 2px; border-color: white;"
+             alt="A poster of the Starship Titanic, a 90s sci-fi spaceship, from the original Starship Titanic website. It's a drawing of a white ship of an ultramarine and bright orange background.">
+
+        <!--To-Do-->
+    </div>
+
+    <div class="right-container">
+
+        <!--Music Player-->
+        <div class="sidebar"
+             style="height: 470px; margin-top: 0px; background-image: url('3-Assets/Images/Backgrounds/canvas50.png'); border-color: white  ;">
+            <h1 style="z-index: 2; position: relative;">Now Playing:</h1>
+            <div class="music-body">
+                <div class="music-container">
+                    <div class="music-info">
+                        <h1 id="title"
+                            style="margin-top: 140px; background: rgba(15, 0, 76, 0.66); width: 210px; z-index: 2; position: relative;">
+                            Title</h1>
+                        <p style="display: inline;">Artist: </p>
+                        <p id="artist" style="display: inline;">Artist</p><br>
+                        <p style="display: inline;">Album: </p>
+                        <p id="album" style="display: inline;">Album</p>
+                        <div class="progress-container" style="width: 210px; margin-right: -50px; margin-top: 5px;">
+                            <div class="progress"></div>
+                            <p style="font-size: 15px; display: inline;">00:00</p>
+                            <p style="font-size: 15px; display: inline; position: absolute; right: 0px;" id="duration">
+                                Duration</p>
+                        </div>
+                    </div>
+
+                    <audio src="https://files.catbox.moe/ec3ruc.mp3" id="audio"></audio>
+                    <img src="3-Assets/Images/Transparents/cdromdest.gif"
+                         style="position: absolute; margin-left: 65px; z-index: 0; margin-top: 170px; width: 120px; transform: scaleX(-1);"
+                         alt="A rotating gif of a blue disk.">
+                    <div class="img-container">
+                        <img src="3-Assets/Images/AlbumCovers/oingo_boingo_unreleased.jpg" alt="Album cover"
+                             id="cover"/>
+                    </div>
+
+                    <div class="navigation">
+                        <button id="prev" class="action-btn">
+                            <img src="3-Assets/Images/UI/LeftArrow.gif" alt="Previous track">
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <img src="3-Assets/Images/UI/PlayButton.gif" alt="Play/Pause">
+                        </button>
+                        <button id="next" class="action-btn">
+                            <img src="3-Assets/Images/UI/RightArrow.gif" alt="Next track">
+                        </button>
+                    </div>
+                    <p style="position: absolute; margin-top: 254px; margin-left: -50px; font-size: 16px; font-weight: 500; text-decoration: underline;">
+                        Tracklist:</p>
+                    <div class="playlist">
+                        <ul class="tracklist">
+                            <li data-index="0" onclick="setTrack(0)"><span class="trackInfo"><span class="trackTitle">Title1</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="1" onclick="setTrack(1)"><span class="trackInfo"><span class="trackTitle">Title2</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="2" onclick="setTrack(2)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="3" onclick="setTrack(3)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="4" onclick="setTrack(4)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="5" onclick="setTrack(5)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="6" onclick="setTrack(6)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="7" onclick="setTrack(7)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="8" onclick="setTrack(8)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="9" onclick="setTrack(9)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="10" onclick="setTrack(10)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="11" onclick="setTrack(11)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                            <li data-index="12" onclick="setTrack(12)"><span class="trackInfo"><span class="trackTitle">Title3</span> - <span
+                                    class="trackArtist">Artist</span></span><span class="trackDuration">Duration</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Sticker Bank-->
+        <div class="sidebar"
+             style="background-image:url('3-Assets/Images/Backgrounds/canvas62.png'); border-color: white; height: 200px;">
+            <h1>Sticker Bank:</h1>
+            <div class="draggable" style="left: 130px; top: 70px;">
+                <img src="3-Assets/Images/Transparents/bluestar.png"
+                     style="width: 40px;" alt="A sticker of a blue holographic star.">
+            </div>
+            <div class="draggable" style="left: 50px; top: 80px;"><img
+                    src="3-Assets/Images/Transparents/out_of_this_world.png" style="width: 85px;"
+                    alt="A sqaure purple sticker with an orange planet and stars on it. There is text in the negative space that says 'out of this world'.">
+            </div>
+            <div class="draggable" style="left: 40px; top: 50px;"><img src="3-Assets/Images/Transparents/dinoguitar.png"
+                                                                       style="width: 150px;"
+                                                                       alt="A holographic sticker of a blue dinosaur playing an electric guitar.">
+            </div>
+            <div class="draggable" style="left: 80px; top: 40px;"><img
+                    src="3-Assets/Images/Transparents/purple%20star.png" style="width: 60px;"
+                    alt="A sticker of a pruple holographic star."></div>
+            <div class="draggable" style="left: 10px; top: 40px;"><img
+                    src="3-Assets/Images/Transparents/youre_a_star.png" style="width: 85px;"
+                    alt="A square, cyan sticker that says 'You're a star'. The hole in the A is filled with a shooting star.">
+            </div>
+            <div class="draggable" style="left: 10px; top: 90px;"><img src="3-Assets/Images/Transparents/yellowstar.png"
+                                                                       style="width: 50px;"
+                                                                       alt="A sticker of a yellow holographic star.">
+            </div>
+            <div class="draggable" style="left: 10px; top: 50px;"><img
+                    src="3-Assets/Images/Transparents/flying%20saucer.png" style="width: 210px;"
+                    alt="A holographic sticker of a blue flying saucer."></div>
+            <div class="draggable" style="left: 100px; top: 60px;"><img
+                    src="3-Assets/Images/Transparents/very_creative.png" style="width: 85px;"
+                    alt="A square purple sticker decorated with confetti-like shapes that says 'Very creative'."></div>
+            <div class="draggable" style="left: 80px; top: 100px;"><img src="3-Assets/Images/Transparents/coralstar.png"
+                                                                        style="width: 60px;"
+                                                                        alt="A sticker of a coral holographic star.">
+            </div>
+        </div>
+
+        <!--Promo-->
+        <div class="sidebar"
+             style="background-image: url('3-Assets/Images/Backgrounds/cavnas89.png'); border-color: green">
+            <img src="3-Assets/Images/Solids/freepalestine.jpg"
+                 style="width: 102%; margin-left: -4px; border: dotted crimson 2px; border-radius: 5px;"
+                 alt="A risograph print of a hand holding up a watermelon that says 'Freedom for Palestine' in both English and Arabic.">
+            <p style="text-align: center; margin-bottom: 5px;">If you're reading this and have a few bucks to spare,
+                please consider donating to the featured campaign on <a href="https://www.gazafunds.com/"
+                                                                        target="_blank">Gaza Funds</a>, a website that
+                organizes vetted fundraisers for Palestinians looking to evacuate or rebuild their lives during the
+                genocide. Donations as little as $5 make a difference!!<br><br>FREE PALESTINE<br> 🍉🍉🍉</p>
+        </div>
+    </div>
+
+    <div class="welcome-image">
+        <img src="3-Assets/Images/Transparents/Rotating_earth_animated_transparent.gif"
+             style="width: 100px;height: 100px;padding-left: 115px;padding-top: 65px"
+             alt="">
+        <img src="3-Assets/Images/Transparents/x.gif"
+             style="scale:70%;right: 850px;bottom: 1810px;"
+             alt="">
+        <img src="3-Assets/Images/Transparents/twiiter.gif"
+             style="scale:70%;padding-left: 30px;bottom: 1820px;"
+             alt="">
+    </div>
+
+    <iframe id="target" name="mainbox" src="2-Pages/Main/main.html" onload="updateURL()"
+            style="overflow: hidden; overflow-x: hidden; scrolling: no; width: 100%; border: none; height: 1900px;"></iframe>
+
+</div>
+
+<!--<script src="/3-Assets/Scripts/flood.js"></script>-->
+<script src="3-Assets/Scripts/hide-image.js"></script>
+<script src="3-Assets/Scripts/music-player.js"></script>
+<script>
+    //Make the DIV element draggagle:
+    var offset = 0;
+    var mydivs = document.getElementsByClassName("draggable");
+    for (var i = 0; i < mydivs.length; i++) {
+        dragElement(mydivs[i]);
+    }
+
+    function dragElement(elmnt) {
+        var pos1 = 0,
+            pos2 = 0,
+            pos3 = 0,
+            pos4 = 0;
+        if (elmnt.getElementsByClassName("mydivheader")[0]) {
+            /* if present, the header is where you move the DIV from:*/
+            elmnt.getElementsByClassName(
+                "mydivheader"
+            )[0].onmousedown = dragMouseDown;
+        } else {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+            elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+        }
+
+        function closeDragElement() {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+</script>
+</body>
+
+<footer style="position: relative; z-index: 2;">
+    <p>Proud member of the</p>
+    <div class="buttons" style="margin-top: 10px">
+        <img src="3-Assets/Images/Web/Pixels/badge.gif" alt="World Wide Web">
+    </div>
+</footer>
+
+<!-- Mirrored from odditycommoddity.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:26:11 GMT -->
+</html>

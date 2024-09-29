@@ -1,0 +1,74 @@
+/*---Animation css---*/
+.inactive {
+    display: none;
+}
+
+.transition-box {
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+    animation: open 3s ease 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes open {
+    0% {transform: scaleY(1)}
+    100% {transform: scaleY(0)}
+}
+
+@keyframes close {
+    0% {transform: scaleY(0)}
+    100% {transform: scaleY(1)}
+}
+
+.squashNstretch {
+    animation: squishsquash ease 2.5s infinite;
+}
+
+.upNdown {
+    animation: upNdown ease-in-out 3s infinite;
+}
+
+@keyframes squishsquash {
+    0% {transform: scaleY(1.03) scaleX(0.97)}
+    50% {transform: scaleY(0.97) scaleX(1.03)}
+    100% {transform: scaleY(1.03) scaleX(0.97)}
+}
+
+@keyframes upNdown {
+    0% {margin-top: 360px}
+    50% {margin-top: 400px}
+    100% {margin-top: 360px}
+}
+
+@keyframes float {
+    0% {transform: translateY(10)}
+    50% {transform: translateX(-10)}
+}
+
+@keyframes spin {
+    0% {transform: scaleY(0.0) rotate(90deg)}
+    25% {transform: scaleY(1.0)rotate(90deg)}
+    50% {transform: scaleY(0.0) rotate(90deg)}
+    75% {transform: scaleY(-1.0) rotate(90deg)}
+    100% {transform: scaleY(0.0) rotate(90deg)}
+}
+
+@keyframes squishsquash2 {
+    0% {transform: scaleY(1.03) scaleX(0.97) rotate(90deg)}
+    50% {transform: scaleY(0.97) scaleX(1.03) rotate(90deg)}
+    100% {transform: scaleY(1.03) scaleX(0.97) rotate(90deg)}
+}
+
+.rotate-anim:hover {
+    animation: rotateBackAndForth 5s ease infinite;
+    animation-play-state: running;
+}
+
+@keyframes rotateBackAndForth {
+    33% {transform: rotate(30deg)}
+    66% {transform: rotate(-30deg)}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from odditycommoddity.neocities.org/2-Pages/Library/coding by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:28:05 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ODDITYCOMMODDITY - CODING</title>
+    <link rel="icon" type="image/x-icon" href="../../3-Assets/Images/Transparents/Pixels/cd.html">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+<body style="background-image: none; background-color: rgba(0, 0, 0, 0);">
+    <div class="container" style="margin-left: 239px; margin-top: -10px; width: 1000px; padding-top: 10px;">
+    <div class="containerbody" style='height: auto; background-image:url("../../3-Assets/Images/Backgrounds/canvas74.png"); padding-top: 15px; text-align: center; margin-right: 248px;'>
+        <img src="../../3-Assets/Images/Transparents/dolphin1.gif" style="position: absolute; margin-left: -200px; margin-top: -10px; width: 180px;" alt="Transparent gif of some chrome dolphin balloons">
+        <img src="../../3-Assets/Images/Transparents/cds.html" style="position: absolute; margin-left: -320px; margin-top: -30px; width: 170px;" alt="Drawing of cds">
+        <img src="../../3-Assets/Images/Transparents/beaker.gif" style="position: absolute; margin-left: 190px; margin-top: -30px; width: 140px;" alt="Gif of a CGI beaker">
+        <img src="../../3-Assets/Images/Transparents/record02.gif" style="position: absolute; margin-left: 310px; margin-top: 30px; transform: scaleX(1); width: 175px;" alt="Colorful drawing of a record">
+            <h1 style="position: relative; z-index: 1; text-decoration: underline;">F2U Code!!!</h1>
+        <p style="position: relative; z-index: 1;"><br><br><br><br><br>I've had a few requests to share some of my site code, so here it is :-) this is lONG overdue lol. all code is free 2 use and modify with attribution!</p>
+    </div>
+        
+    <div class="containerbody" style='height: auto; background-image:url("../../3-Assets/Images/Backgrounds/canvas87.png"); padding-top: 15px; text-align: left; margin-right: 248px; margin-top: 15px;'>
+            <h1>THE ODDITYCOMMODDITY MUSIC PLAYER</h1>
+        <p>ok i will be real... this may be difficult to get working on other sites bc of how i made it. i made this by frankensteining/heavily modding other online html music player tutorials, i didn't really make it knowing people would want it LOL. but regardless i will try my best to explain how to set it up. <br><br>
+        <a href="https://mega.nz/file/I74CxbjB#ZQ8Xtzn0r0yzJlHnRZOPXzpENKwQPrrafT1D_mrfcVQ">here is a zip of the files you will need</a> <br><br>
+        
+        ok.. so the actual playlist itself is stored in the javascript under the variable 'songlist'. there you will need to put the song title/artist name/album name, a link to the album cover, and a link to the song itself. hopefully the json is labelled well enough that you can figure out where all of that goes lol. once you're done, run it through a <a href="https://jsonlint.com/">json validator</a> (everything from after 'var songlist =' to the end of the variable) to so you know you did it alright. once you've done that you're done with the js! yay!<br><br>
+        
+        ok next step. the way i had to do it was make a code element for each individual track. in the unordered list element in the html file, ul class='tracklist'. the list items inside that are the tracks. copy and paste if you need more, or cut away some if you have less tracks. if you add more, be sure to change the data-index and setTrack(number) accordingly. also, this code is designed to autoplay on page load. if you don't want that happening, remove the 'playSong();' at the bottom of the script.<br><br>
+        
+        last step, customization! a lot of the stuff that customizes it can be found in the html, so feel free to swap around the file paths to your own assets (in fact i encourage it!! please customize this don't let it be exactly like mine.) all i ask is that you don't remove the attribution element at the bottom pretty please (you can style it to fit your customization tho) :-)<br><br>
+        
+        that's it! have fun, lemme know if any of you guys need help :-D</p>
+    </div>
+        
+        <div class="containerbody" style='height: auto; background-image:url("../../3-Assets/Images/Backgrounds/canvas87.png"); padding-top: 15px; text-align: left; margin-right: 248px; margin-top: 15px;'>
+            <h1>THE STICKER BANK</h1><br>
+        <p>hi. sorry i took so long to add this. quite frankly the amount of time it took me to put together this tutorial compared to how long it took me to just sit down and do it is embarassing but well. executives gonna dysfunction!<br><br>
+        
+        its actually hilarious to me how much this was requested and how frequently it was, like out of nowhere i had like 5 separate people asking for this within days of each other. which i cant blame them stickers are awesome.<br><br>
+            
+        <a href="https://mega.nz/file/9iAEXbgS#8F6xM5P-iiVr6gZrAgIi9LQwpRbs3LivU7Om-PjC1Ko">your zip file, m'lord</a> <br><br>
+            
+        setting this up is not nearly as hard as the music player. inside the div that says "class="draggable"", there's an image; change that src to your sticker's image path. you can change the width from here also, and change the position it loads in at through the div's top and left attributes. you can actually assign the draggable class to any div you want i think, but you might have to do some troubleshooting with it to get it looking right. if you run into any issues installing this, make sure that you're putting the script at the very bottom of the body tag.<br><br>
+            
+        thats it have fun :0)! no need to credit me on this one, i took it from someone else who i think took it from w3 and told me "ideas are free and i ♥ free stuff" when i asked lol
+            
+        </p>
+    </div>
+    </div>
+    <a style="margin-left: 570px;" href="library.html"><img src="../../3-Assets/Images/UI/back.gif" alt="back"></a>
+</body>
+
+<!-- Mirrored from odditycommoddity.neocities.org/2-Pages/Library/coding by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:28:07 GMT -->
+</html>

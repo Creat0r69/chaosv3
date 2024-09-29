@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from odditycommoddity.neocities.org/2-Pages/Gallery/gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:26:41 GMT -->
+<head>
+    <script src="../../../cdn.jsdelivr.net/npm/lazyload%402.0.0-rc.2/lazyload.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../3-Assets/Style-sheets/gallery.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../3-Assets/Style-sheets/animations.css" rel="stylesheet" type="text/css" media="all">
+
+  </head>
+    <div style="background-color: black; transform-origin: top; margin-top: -20px;" class="transition-box" id="transition-bottom"></div>
+    <div style="background-color: black; margin-top: 47.4vh; transform-origin: bottom;" class="transition-box" id="transition-top"></div>
+  <body style="background-image: url('../../3-Assets/Images/Backgrounds/canvas51.png');">
+    <div class="container" style="height: 735px; text-align: center; padding: 0px; margin-top: 20px; width: 1060px; border: 0px;">
+        <img src="../../3-Assets/Images/Web/Pixels/house.gif" alt="Back to home" onclick="runAway()" style="position: absolute; display: inline; width: 40px; margin-left: -55px; bottom: 0px;">
+        <iframe src="lobby.html" name="mainbox" id="target" onload="updateURL()" style="height: 100%; width: 100%; border: dotted; border-radius: 5px; border-color: hotpink; border-radius: 5px; line-height: -10px; overflow-x: hidden"></iframe>
+    </div>
+  </body>
+    
+    <script type="text/javascript">            
+            var bgm = new Audio('https://files.catbox.moe/s7eql8.mp3');
+            bgm.volume = 0.2;
+            bgm.play();
+            
+            bgm.onended = function() {
+                bgm.play();
+            }
+        
+            function runAway() {
+                var transitionTop = document.getElementById('transition-top');
+                transitionTop.style.animation = "close 2s ease normal 1";
+                transitionTop.animationFillMode = "backwards";
+                
+                var transitionBottom = document.getElementById('transition-bottom');
+                transitionBottom.style.animation = "close 2s ease normal 1";
+                transitionBottom.animationFillMode = "backwards";
+                
+                transitionBottom.addEventListener('animationend', () => {
+                    location.replace("../../index.html");
+                });
+            }
+      </script>
+    <script type="text/javascript">
+        const mainboxURL = document.getElementById("target").contentWindow.location.href
+        const mainbox = document.getElementById("target")
+        
+        function updateURL() {
+            const mainboxURL = document.getElementById("target").contentWindow.location.href;
+            if (mainboxURL.indexOf("lobby.html") !== -1) {
+                mainbox.style.overflow = "hidden !important";
+            } else {
+            }
+        }
+    </script>
+
+<!-- Mirrored from odditycommoddity.neocities.org/2-Pages/Gallery/gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Sep 2024 17:26:42 GMT -->
+</html>

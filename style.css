@@ -1,0 +1,505 @@
+/*-- Fonts --*/
+@font-face {
+    font-family: AppleKid;
+    src: url('3-Assets/Fonts/Archivo-Italic-VariableFont_wdth,wght.ttf');
+}
+
+/*--Main Css--*/
+* {
+    cursor: url("3-Assets/Images/Transparents/11954a.html"), url("3-Assets/Images/Transparents/11954a.html"), default;
+}
+
+body {
+    background-color: black;
+    background-image: url("3-Assets/Images/Backgrounds/bg.jpg");
+    color: rgb(255, 255, 255);
+    font-family: "Comic Sans MS", Lato, Verdana;
+    margin: 0px;
+    position: relative;
+    height: auto;
+    width: 100%;
+
+    
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#flood {
+    z-index: 1;
+}
+
+#flood-menu {
+    background-color: rgba(20, 0, 50, 0.8);
+    border-top-left-radius: 5px;
+    border-top: dotted 2px orangered;
+    border-left: dotted 2px orangered;
+    
+    color: orange;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header {
+    background: rgb(36, 13, 82);
+    background-image: url("3-Assets/Images/Backgrounds/canvas11.png");
+    border-style: dashed;
+    border-color: darkorange;
+    border-width: 2px;
+    border-radius: 5px;
+    
+    height: 22px;
+    padding: 0;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.header-img {
+    width: 100%;
+    height: 104px;
+    background-image: url("3-Assets/Images/UI/SITELOGO.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    
+    position: relative;
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    height: 116px;
+    background-image: url("3-Assets/Images/Transparents/weeeeeezers%20small.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 0px;
+    margin-bottom: 5px;
+    
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0px;
+    margin-top: -2px;
+    padding: 0px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 95px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Tahoma", "Lato";
+    position: relative;
+    z-index: 10;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.homeBtn {
+    margin: 0;
+    padding: 0;
+}
+
+.otherBtn {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding:0px;
+    width: 100%;
+    position: center;
+}
+
+.container {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+    z-index: 2;
+}
+
+.left-container {
+    width: 214px;
+    flex-wrap: wrap;
+    display: inline;
+    position: absolute;
+}
+
+.right-container {
+    width: 214px;
+    flex-wrap: wrap;
+    display: inline;
+    position: absolute;
+    margin-left: 1020px;
+}
+
+.sidebar {
+    float: left;
+    height: auto;
+    position: relative;
+    width: 210px;
+    background-color: rgb(36, 13, 82);
+    background-image: url("3-Assets/Images/Backgrounds/canvas21.png");
+    padding: 8px;
+    margin: 10px 0px;
+    font-family: "Comic Sans MS", "Lato";
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: deeppink;
+    border-width: 2px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar h1 {
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 25px;
+    font-family: AppleKid;
+    color: rgb(255, 255, 255);
+}
+
+.navlink a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    font-size: 15px;
+    display: block;
+}
+
+.navlink a:hover {
+    color: orangered;
+}
+
+.rightbar {
+    float: right;
+    height: auto;
+    position: absolute;
+    width: 210px;
+    background-color: rgb(36, 13, 82);
+    background-image: url("3-Assets/Images/Backgrounds/canvas50.png");
+    padding: 8px;
+    margin: 0px;
+    margin-left: 1020px;
+    font-family: "Comic Sans MS", "Lato";
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: blueviolet;
+    border-width: 2px;
+}
+
+.rightbar, .todo p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.rightbar h1 {
+    font-style: italic;
+    margin: 0px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.rightbar a, .gallery-container a, .containerbody a, .container a {
+    color: darkorange;
+    text-decoration: none;
+}
+
+.rightbar a:hover, .gallery-container a:hover, .containerbody a:hover, .container a:hover {
+    font-style:italic;
+    color: rgb(255, 255, 255);
+}
+
+.log-list {
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.log-list p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.welcome-mat {
+    font-size: 14px;
+    font-family: "Comic Sans MS", "Lato";
+    
+    float: none;
+    width: 730px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-style: hidden;
+    border-width: 2px;
+    padding: 10px;
+    display: block;
+}
+
+
+
+.welcome-mat p {
+    margin-left: 2px;
+    display: block;
+    margin-top: 10px;
+    width: 73%;
+    color: rgb(255, 255, 255);
+}
+
+.welcome-image img {
+    pointer-events: none;
+    position: absolute;
+    float: right;
+    z-index: 1;
+    margin-left: 800px;
+    margin-top: 100px;
+    width: 250px;
+}
+
+.welcome-image.inactive {
+    display: none;
+}
+
+.update-logs {
+    font-size: 14px;
+    font-family: "Comic Sans MS", "Lato";
+    
+    float: none;
+    width: 730px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    
+    background: rgb(36, 13, 82);
+    background-image: url("3-Assets/Images/Backgrounds/canvas.png");
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: deepskyblue;
+    border-width: 2px;
+    
+    padding: 10px;
+}
+
+.update-logs table, td, tr {
+    background-image: url("3-Assets/Images/Backgrounds/canvas53.png");
+    border-collapse: collapse;
+    text-align: left;
+    border-color: deepskyblue;
+    border-width: 2px;
+    border-style: dotted;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.refreshments {
+    font-size: 14px;
+    font-family: AppleKid;
+    float: none;
+    width: 730px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("3-Assets/Images/Backgrounds/canvas11.png");
+    border-radius: 5px;
+    border-style: hidden;
+    border-color: white;
+    border-width: 2px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.refreshments img {
+    display: inline-flex;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.refreshments table {
+    background-image: none;
+    border-collapse: collapse;
+    border: none;
+    padding: 0px;
+    text-align: center;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+.containerbody {
+    width: 734px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-width: 2px;
+    justify-content: space-around;
+    padding: 8px;
+    text-align: center;
+}
+
+.containerbody p, c {
+    vertical-align: middle;
+    font-family: "Comic Sans MS", Lato;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+    margin: 6px 4px;
+    background: rgba(0,20,60,0.2)
+    
+}
+
+.containerbody img {
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    padding: 0;
+    width: 91px;
+    display: block;
+}
+
+.buttons img {
+    width: auto;
+    height: auto;
+    padding: 1px;
+}
+
+.button-row {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: -9px;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    display: block;
+    
+}
+
+footer p {
+    color: darkorange;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Comic Sans MS", Lato;
+}
+
+.stamp-block {
+    display: inline;
+    margin-left: 3.5px;
+    position: absolute;
+    width: 428px;
+}
+
+.stamp-block img {
+    padding: 0px 4px;
+    margin: 0px;
+    width: 99px;
+    height: 56px;
+}
+
+#target {
+    height: 1798px;
+}
+
+.draggable {
+    position: absolute;
+    z-index: 10;
+    display: inline;
+}
+
+.picture-link {
+    transition: transform 0.5s;
+}
+
+.picture-link:hover {
+    transform: scale(1.2);
+}
+
+#statuscafe {
+    padding-left: 5px;
+    background-color: none;
+    font-size: 14px;
+    z-index: 2;
+}
+#statuscafe-username {
+    margin-bottom: 0px;
+    font-style: italic;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}

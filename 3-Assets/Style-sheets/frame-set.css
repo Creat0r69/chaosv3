@@ -1,0 +1,55 @@
+/*---Frames---*/
+#frame1 {
+    border: dashed;
+    border-image-source: url("../Images/UI/frame1.png");
+    border-image-slice: 29%;
+    border-image-repeat: repeat;
+    border-image-width: 30px;
+    border-image-outset: 25px;
+    
+    box-shadow: 0px 6px 25px 23px black;
+}
+
+#frame2 {
+    border: dashed;
+    border-image-source: url("../Images/UI/frame2.png");
+    border-image-slice: 46%;
+    border-image-repeat: repeat;
+    border-image-width: 70px;
+    border-image-outset: 48px;
+    
+    box-shadow: 0px 13px 25px 40px black;
+}
+
+#frame3 {
+    border: dashed;
+    border-image-source: url("../Images/UI/frame3.png");
+    border-image-slice: 42%;
+    border-image-repeat: repeat;
+    border-image-width: 52px;
+    border-image-outset: 39px;
+    
+    box-shadow: 0px 10px 25px 32px black;
+}
+
+#frame4 {
+    border: dashed;
+    border-image-source: url("../Images/UI/frame4.png");
+    border-image-slice: 42%;
+    border-image-repeat: repeat;
+    border-image-width: 25px;
+    border-image-outset: 15px;
+    
+    box-shadow: 0px 13px 25px 7px black;
+}
+
+#frame5 {
+    border: dashed;
+    border-image-source: url("../Images/UI/frame5.png");
+    border-image-slice: 31%;
+    border-image-repeat: repeat;
+    border-image-width: 35px;
+    border-image-outset: 32px;
+    
+    box-shadow: 0px 10px 25px 25px black;
+}
