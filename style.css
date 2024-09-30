@@ -1,7 +1,7 @@
 /*-- Fonts --*/
 @font-face {
     font-family: AppleKid;
-    src: url('3-Assets/Fonts/Archivo-Italic-VariableFont_wdth,wght.ttf');
+    src: url('3-Assets/Fonts/Frutiger.ttf');
 }
 
 /*--Main Css--*/
@@ -13,7 +13,7 @@ body {
     background-color: black;
     background-image: url("3-Assets/Images/Backgrounds/bg.jpg");
     color: rgb(255, 255, 255);
-    font-family: "Comic Sans MS", Lato, Verdana;
+    font-family: AppleKid, Lato, Verdana;
     margin: 0px;
     position: relative;
     height: auto;
@@ -117,7 +117,7 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    font-family: "Comic Sans MS", "Tahoma", "Lato";
+    font-family: AppleKid, "Tahoma", "Lato";
     position: relative;
     z-index: 10;
 }
@@ -181,7 +181,7 @@ main {
     background-image: url("3-Assets/Images/Backgrounds/canvas21.png");
     padding: 8px;
     margin: 10px 0px;
-    font-family: "Comic Sans MS", "Lato";
+    font-family: AppleKid, "Lato";
     border-radius: 5px;
     border-style: hidden;
     border-color: deeppink;
@@ -226,7 +226,7 @@ main {
     padding: 8px;
     margin: 0px;
     margin-left: 1020px;
-    font-family: "Comic Sans MS", "Lato";
+    font-family: AppleKid, "Lato";
     border-radius: 5px;
     border-style: hidden;
     border-width: 2px;
@@ -270,7 +270,7 @@ main {
 
 .welcome-mat {
     font-size: 14px;
-    font-family: "Comic Sans MS", "Lato";
+    font-family: AppleKid, "Lato";
     float: none;
     width: 730px;
     height: 250px;
@@ -309,7 +309,7 @@ main {
 
 .update-logs {
     font-size: 14px;
-    font-family: "Comic Sans MS", "Lato";
+    font-family: AppleKid, "Lato";
     
     float: none;
     width: 730px;
@@ -397,7 +397,7 @@ main {
 
 .containerbody p, c {
     vertical-align: middle;
-    font-family: "Comic Sans MS", Lato;
+    font-family: AppleKid, Lato;
     padding: 0;
     display: inline-block;
     text-align: left;
@@ -452,7 +452,7 @@ footer p {
     color: darkorange;
     font-size: 12px;
     text-align: center;
-    font-family: "Comic Sans MS", Lato;
+    font-family: AppleKid, Lato;
 }
 
 .stamp-block {
