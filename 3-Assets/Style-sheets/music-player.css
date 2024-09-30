@@ -55,10 +55,9 @@
     position: absolute;
     bottom:-120px;
     left: 50px;
-    border-style: dotted;
+    border-style: hidden;
     border-width: 2px;
-    border-color: lightseagreen;
-    
+
     animation: rotate 3s linear infinite;
     
     animation-play-state: paused;
@@ -147,9 +146,8 @@
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgb(15, 0, 76, 0.40);
-    border: dotted;
+    border: hidden;
     border-width: 2px;
-    border-color: lightseagreen;
     z-index: 1;
 }
 

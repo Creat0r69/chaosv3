@@ -228,8 +228,7 @@ main {
     margin-left: 1020px;
     font-family: "Comic Sans MS", "Lato";
     border-radius: 5px;
-    border-style: dotted;
-    border-color: blueviolet;
+    border-style: hidden;
     border-width: 2px;
 }
 
@@ -322,8 +321,7 @@ main {
     background: rgb(36, 13, 82);
     background-image: url("3-Assets/Images/Backgrounds/canvas.png");
     border-radius: 5px;
-    border-style: dotted;
-    border-color: deepskyblue;
+    border-style: hidden;
     border-width: 2px;
     
     padding: 10px;
@@ -335,7 +333,7 @@ main {
     text-align: left;
     border-color: deepskyblue;
     border-width: 2px;
-    border-style: dotted;
+    border-style: hidden;
     justify-content: center;
     padding: 5px;
 }
